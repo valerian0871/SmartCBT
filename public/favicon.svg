@@ -1,0 +1,40 @@
+<svg width="64" height="64" viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="favGradient" x1="8" y1="8" x2="56" y2="56" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#2563EB"/>
+      <stop offset="0.55" stop-color="#4F46E5"/>
+      <stop offset="1" stop-color="#7C3AED"/>
+    </linearGradient>
+    <linearGradient id="favInner" x1="18" y1="16" x2="45" y2="43" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#FFFFFF"/>
+      <stop offset="1" stop-color="#DBEAFE"/>
+    </linearGradient>
+  </defs>
+
+  <rect x="4" y="4" width="56" height="56" rx="20" fill="url(#favGradient)"/>
+
+  <path
+    d="M21 20.5C21 17.4624 23.4624 15 26.5 15H34.5C40.299 15 45 19.701 45 25.5C45 31.299 40.299 36 34.5 36H27V45H21V20.5Z"
+    fill="url(#favInner)"
+  />
+
+  <path
+    d="M27 21H34C36.4853 21 38.5 23.0147 38.5 25.5C38.5 27.9853 36.4853 30 34 30H27V21Z"
+    fill="#BFDBFE"
+  />
+
+  <path
+    d="M30 31L41 42"
+    stroke="white"
+    stroke-width="3.2"
+    stroke-linecap="round"
+  />
+
+  <path
+    d="M37.5 42H41V38.5"
+    stroke="white"
+    stroke-width="3.2"
+    stroke-linecap="round"
+    stroke-linejoin="round"
+  />
+</svg>

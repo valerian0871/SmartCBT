@@ -5,6 +5,7 @@ export default function Footer() {
         <div>
           <h3>SmartPrep</h3>
           <p>Your exam practice companion for computer-based testing.</p>
+          <p>© {new Date().getFullYear()} SmartPrep. All rights reserved.</p>
         </div>
 
         <div className="footer-links">

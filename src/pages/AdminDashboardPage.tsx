@@ -39,9 +39,9 @@ export default function AdminDashboardPage() {
         </nav>
 
         <Link to="/" className="admin-logout">
-          <LogOut size={18} />
-          Exit
-        </Link>
+              <LogOut size={18} />
+                   Logout
+         </Link>
       </aside>
 
       <section className="admin-main">

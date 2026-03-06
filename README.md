@@ -13,7 +13,7 @@ SmartPrep simulates a real digital examination environment similar to systems us
 
 # Live Demo
 
-*(Add your deployed link here after deploying)*
+*https://smart-prep-gamma.vercel.app/*
 
 
 ---
@@ -106,27 +106,19 @@ A simulated admin interface including:
 
 ## Home Page
 
-![Home](screenshots/home.png)
+![Home](screenshot/home.png)
 
 ---
 
 ## Exam Interface
 
-![Exam](screenshots/exam.png)
+![Exam](screenshot/exam.png)
 
 ---
 
 ## Result Page
 
-![Result](screenshots/result.png)
-
----
-
-## Admin Dashboard
-
-![Dashboard](screenshots/dashboard.png)
-
-*(Create a `screenshots` folder in your repo and add images there)*
+![Result](screenshot/result.png)
 
 ---
 

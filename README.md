@@ -1,73 +1,303 @@
-# React + TypeScript + Vite
+# SmartPrep CBT Platform
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+![React](https://img.shields.io/badge/React-18-blue?logo=react)
+![TypeScript](https://img.shields.io/badge/TypeScript-5-blue?logo=typescript)
+![Vite](https://img.shields.io/badge/Vite-BuildTool-purple?logo=vite)
+![License](https://img.shields.io/badge/license-MIT-green)
 
-Currently, two official plugins are available:
+A modern **Computer-Based Testing (CBT) platform** built with **React, TypeScript, and Vite**.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+SmartPrep simulates a real digital examination environment similar to systems used for **JAMB, WAEC, and Post-UTME exams**, providing an interactive exam interface, countdown timer, scoring engine, and result review system.
 
-## React Compiler
+---
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+# Live Demo
 
-## Expanding the ESLint configuration
+*(Add your deployed link here after deploying)*
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
 
-```js
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
+---
 
-      // Remove tseslint.configs.recommended and replace with this
-      tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      tseslint.configs.stylisticTypeChecked,
+# Project Overview
 
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+SmartPrep is a fully responsive CBT web application that demonstrates:
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+- interactive exam workflow
+- question navigation system
+- auto scoring logic
+- timer-controlled exams
+- result review interface
+- admin dashboard UI
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+The goal of this project is to demonstrate **clean React architecture, UI design, and application logic**.
 
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+---
+
+# Features
+
+## Interactive Exam Engine
+
+- Question navigation
+- Next / Previous question controls
+- Question palette
+- Answer selection tracking
+
+---
+
+## Countdown Timer
+
+- Timed exam sessions
+- Automatic submission when time expires
+- Time used displayed on result page
+
+---
+
+## Question Randomization
+
+Each exam session randomly shuffles the question order to simulate a realistic testing experience.
+
+---
+
+## Result Review System
+
+After submission, users can:
+
+- view their final score
+- see percentage performance
+- compare answers with correct solutions
+- review all attempted questions
+
+---
+
+## Authentication UI
+
+Frontend pages for:
+
+- Login
+- Signup
+
+These demonstrate authentication interface flows.
+
+---
+
+## Admin Dashboard
+
+A simulated admin interface including:
+
+- student statistics
+- exam activity
+- quick actions
+- analytics cards
+
+---
+
+## UI Enhancements
+
+- glassmorphism design
+- responsive layout
+- dark/light theme toggle
+- mobile navigation menu
+- animated progress bar
+- instruction modal before exam
+
+---
+
+# Screenshots
+
+## Home Page
+
+![Home](screenshots/home.png)
+
+---
+
+## Exam Interface
+
+![Exam](screenshots/exam.png)
+
+---
+
+## Result Page
+
+![Result](screenshots/result.png)
+
+---
+
+## Admin Dashboard
+
+![Dashboard](screenshots/dashboard.png)
+
+*(Create a `screenshots` folder in your repo and add images there)*
+
+---
+
+# Tech Stack
+
+## Frontend
+
+- React
+- TypeScript
+- Vite
+
+---
+
+## UI / Styling
+
+- CSS
+- Glassmorphism UI
+- Lucide Icons
+
+---
+
+## Routing
+
+- React Router DOM
+
+---
+
+## Development Tools
+
+- Node.js
+- npm
+- VS Code
+
+---
+
+# Project Structure
+src
+├─ app
+│ ├─ App.tsx
+│ └─ routes.tsx
+│
+├─ components
+│ ├─ Navbar.tsx
+│ ├─ BrandLogo.tsx
+│ ├─ ThemeToggle.tsx
+│ ├─ HeroSection.tsx
+│ ├─ FeaturesSection.tsx
+│ ├─ CTASection.tsx
+│ └─ Footer.tsx
+│
+├─ pages
+│ ├─ HomePage.tsx
+│ ├─ LoginPage.tsx
+│ ├─ SignupPage.tsx
+│ ├─ ExamPage.tsx
+│ ├─ ResultPage.tsx
+│ └─ AdminDashboardPage.tsx
+│
+├─ data
+│ └─ questions.ts
+│
+├─ styles
+│ ├─ global.css
+│ ├─ home.css
+│ ├─ exam.css
+│ ├─ result.css
+│ ├─ auth.css
+│ └─ admin.css
+│
+└─ main.tsx
+# Getting Started
+
+## Clone the repository
+
+
+git clone https://github.com/yourusername/smartprep-cbt.git
+
+
+---
+
+## Navigate to project folder
+
+
+cd smartprep-cbt
+
+
+---
+
+## Install dependencies
+
+
+npm install
+
+
+---
+
+## Run the development server
+
+# Getting Started
+
+## Clone the repository
+
+
+git clone https://github.com/yourusername/smartprep-cbt.git
+
+
+---
+
+## Navigate to project folder
+
+
+cd smartprep-cbt
+
+
+---
+
+## Install dependencies
+
+
+npm install
+
+
+---
+
+## Run the development server
+
+
+npm run dev
+
+
+The app will run at:
+
+
+---
+
+# Future Improvements
+
+Possible enhancements include:
+
+- backend authentication
+- database-driven question bank
+- exam creation panel
+- real analytics dashboard
+- user progress tracking
+- leaderboard system
+- difficulty-based question filtering
+
+---
+
+# Deployment
+
+This project can be deployed using:
+
+- **Vercel**
+- **Netlify**
+- **GitHub Pages**
+
+Recommended:
+Vercel
+
+
+---
+
+# Author
+
+**Prosper Kayode**
+  
+Frontend Developer | Data Analyst
+
+---
+
+# License
+
+This project is licensed under the MIT License.
